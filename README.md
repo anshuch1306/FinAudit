@@ -1,16 +1,62 @@
-# React + Vite
+# FinAudit — Transaction Validation Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+FinAudit is a React-based dashboard that validates financial transaction data uploaded through CSV files. It helps identify common data-quality issues and provides a downloadable report of flagged transactions.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **CSV Upload:** Upload transaction data using a CSV file.
+- **Data Validation:** Detect missing fields, invalid amounts, and duplicate records.
+- **Audit Summary:** View total, valid, and flagged transaction counts.
+- **Flagged Report Export:** Download flagged transactions and their associated issues as a CSV report.
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- JavaScript
+- CSS
+- Vite
 
-## Expanding the ESLint configuration
+## CSV Format
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+The uploaded CSV file should contain these columns:
+
+| Date | Description | Amount |
+|---|---|---:|
+| 2026-10-01 | Salary | 50000 |
+| 2026-10-02 | Groceries | -1500 |
+
+## Getting Started
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/YOUR_USERNAME/FinAudit.git
+   ```
+
+2. Navigate to the project folder:
+
+   ```bash
+   cd FinAudit/frontend
+   ```
+
+3. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+4. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+## Purpose
+
+This project demonstrates frontend development, CSV file handling, data validation, error reporting, and downloadable report generation.
+
+## Future Improvements
+
+- Add transaction filtering and search.
+- Support more validation rules.
+- Add charts for transaction summaries.
