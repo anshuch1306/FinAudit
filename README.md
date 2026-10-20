@@ -30,7 +30,7 @@ The uploaded CSV file should contain these columns:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/YOUR_USERNAME/FinAudit.git
+   git clone https://github.com/anshuch1306/FinAudit.git
    ```
 
 2. Navigate to the project folder:
